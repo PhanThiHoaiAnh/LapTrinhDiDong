@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_intro"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_home"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnBack_ofHome"
+                android:layout_width="337dp"
+                android:layout_height="58dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_back" />
+
+            <Button
+                android:id="@+id/btnLogOut_ofHome"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_baseline_logout_24" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="232dp"
+            android:layout_height="133dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/savemoney" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="casual"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="60dp" />
+
+        <Button
+            android:id="@+id/btnUse_ofHome"
+            android:layout_width="250dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableTop="@drawable/ic_chitieu"
+            android:paddingTop="20dp"
+            android:text="Chi Tiêu"
+            android:textColor="@color/bg_s_l"
+            app:cornerRadius="30dp" />
+
+        <Button
+            android:id="@+id/btnMake_ofHome"
+            android:layout_width="250dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableTop="@drawable/ic_thunhap"
+            android:paddingTop="20dp"
+            android:text="Thu nhập"
+            android:textColor="@color/bg_s_l"
+            app:cornerRadius="30dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
